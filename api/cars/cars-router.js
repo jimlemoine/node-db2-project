@@ -15,7 +15,7 @@ router.get('/', async (req, res, next) => {
     }
 });
 
-router.get('/:id', checkCarId, async (req, res, next) => {
+router.get('/:id', checkCarId, async (req, res, next) => { //eslint-disable-line
     res.status(200).json(req.validCar)
 });
 
